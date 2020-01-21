@@ -1,0 +1,363 @@
+$theme-colors: (
+    "primary": #fff,
+    "secondary": #fff,
+    "success": #fff,
+    "danger": #fff,
+    "info": #fff,
+    "warning": #fff,
+    "light": #000,
+    "dark": #000000
+);
+
+$body-bg: black;
+$body-color: white;
+$light: #ffffff;
+$input-color: #000;
+$table-bg: #000;
+$table-hover-bg: #000;
+$nav-pills-link-active-color: #000;
+$white: #ffffff;
+$black: #000;
+$border: 1.5px solid white;
+$nav-pils-border-radius: 0.25rem;
+$breadcrumb-bg: none;
+$box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+$font-size: 1rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/functions";
+
+.well,
+.card-header {
+    border: $border;
+    background: $black;
+}
+
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+
+.form-control {
+    border: $border;
+    background: $body-bg;
+}
+
+.input-lg {
+    height: $input-height-lg;
+}
+
+.input-sm {
+    height: $input-height-sm;
+}
+
+.nav-pills > li.active > a {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+}
+
+.breadcrumb a,
+.breadcrumb .active,
+.disabled a,
+th,
+.fas,
+.fa-bell,
+.fa-envelope,
+.modal-header .modal-title {
+    background-color: $body-bg;
+    color: $white;
+}
+
+.card-header .btn-link {
+    font-weight: 500;
+}
+
+.table thead th {
+    border-bottom: $border;
+    border-top: $border;
+}
+
+.table tbody td {
+    border-bottom: $border;
+}
+
+.table tbody tr:hover {
+    background: $white;
+    color: $black;
+}
+
+.modal-header {
+    border-bottom: $border;
+}
+
+.page-header {
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    caret-color: $white;
+}
+
+.form-control.is-invalid,
+.form-control.is-valid,
+.form-control.is-invalid:focus,
+.form-control.is-valid:focus {
+    background-image: none;
+}
+
+.btn-secondary,
+.btn-secondary.disabled {
+    border: $border;
+}
+
+.btn:hover {
+    background-color: $black;
+    color: $white;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+p {
+    font-size: $font-size;
+}
+
+small {
+    font-size: calc(1rem - 0.15rem);
+}
+
+th {
+    font-weight: 400;
+}
+
+.table td,
+.table thead th {
+    padding-left: 1.5rem;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+}
+
+.control-label {
+    margin-bottom: 0;
+    font-size: $font-size;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $white;
+    background-color: $white;
+}
+
+.custom-control-input ~ .custom-control-label::before {
+    border-color: $white;
+    background-color: $black;
+}
+
+option:checked,
+option:hover {
+    background: black;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active > .nav-link {
+    color: $white;
+}
+
+.nav-tabs .nav-link.active {
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(1rem + 0.5rem);
+    color: $white;
+    border-color: transparent;
+    border-bottom: $border;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.fas {
+    vertical-align: -0.1rem;
+    margin-left: 0.5rem;
+}
+
+.badge {
+    padding: 0.5rem 0.5rem;
+    font-weight: normal;
+    line-height: 1;
+    border-radius: 0.25rem;
+}
+
+.fa-bell,
+.fa-envelope {
+    font-size: calc(1rem + 1rem);
+}
+
+.fa-bell + .badge-danger,
+.fa-envelope + .badge-danger {
+    position: relative;
+    top: -12px;
+    left: -14px;
+    border-radius: 56px;
+    padding: 0.3rem 0.5rem;
+}
+
+.btn-info .badge-light,
+.list-group-item .badge {
+    border-radius: 50px;
+    padding: 0.3rem 0.5rem;
+}
+
+.progress {
+    margin-bottom: 1rem;
+    margin-left: 0.3rem;
+    background: $body-bg;
+    border: $border;
+}
+
+.list-group-item {
+    border: none;
+    padding: 1rem;
+    background: $black;
+    border: $border;
+}
+
+.list-group-item:last-child {
+    padding-bottom: 1rem;
+}
+
+.active.new-item {
+    padding: 0.3rem 0 0.3rem 0.5rem;
+}
+
+.last-item {
+    padding-left: 1rem;
+}
+
+.card-body {
+    padding: 1.25rem 2rem;
+    border: $border;
+    background: $black;
+}
+
+.card-body .card-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.modal-title {
+    font-weight: 400;
+}
+
+.modal-content {
+    border: $border;
+    background: $body-bg;
+}
+
+.modal-body {
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.popover {
+    border: none;
+}
+
+.popover-body {
+    border: $border;
+    padding: 1rem;
+    color: $white;
+    font-size: $font-size;
+    z-index: 2;
+}
+
+.list-group:hover .list-group-item:hover {
+    background-color: #fff;
+    color: black;
+}
+
+//vertical-menu
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: $black;
+    width: 300px;
+    height: 100%;
+}
+
+.menu .list-group-item {
+    width: 100%;
+    color: $white;
+    background: $black;
+    border: $border;
+    padding: 1rem;
+}
+
+.list-group-item span {
+    padding-left: 1rem;
+}
+
+.menu .list-group-item:hover {
+    background: $white;
+    cursor: pointer;
+    color: $black;
+}
+
+.menu .list-group-item .fas {
+    display: none;
+}
+
+.navbar,
+.table {
+    border: 1.5px solid $white;
+}
+
+.alert {
+    background: $black;
+    border: $border;
+}
+
+.bs-docs-section {
+    margin-bottom: 2rem;
+}
+
+.dropdown-menu {
+    padding-left: 1rem;
+    color: $white;
+    background: $black;
+    border: $border;
+}
+
+.page-link {
+    background: $black;
+}
+
+.page-item.active .page-link {
+    color: $black;
+}
+
+.close,
+.close:hover {
+    color: $white;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $white;
+}
