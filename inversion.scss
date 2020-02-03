@@ -41,6 +41,7 @@ $font-size: 1rem;
 .form-control {
     border: $border;
     background: $body-bg;
+    color: $white;
 }
 
 .input-lg {
@@ -54,6 +55,7 @@ $font-size: 1rem;
 .nav-pills > li.active > a {
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
+    border-radius: 0.25rem;
 }
 
 .breadcrumb a,
@@ -96,7 +98,7 @@ th,
 }
 
 .form-control:focus {
-    caret-color: $white;
+    caret-color: $black;
 }
 
 .form-control.is-invalid,
@@ -176,7 +178,6 @@ option:hover {
 .nav-tabs .nav-link.active {
     font-style: normal;
     font-weight: 500;
-    font-size: calc(1rem + 0.5rem);
     color: $white;
     border-color: transparent;
     border-bottom: $border;
@@ -360,4 +361,10 @@ option:hover {
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: $white;
+}
+
+.page-link:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $black !important;
 }

@@ -7602,7 +7602,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .form-control {
   border: 1.5px solid white;
-  background: black; }
+  background: black;
+  color: #ffffff; }
 
 .input-lg {
   height: calc(1.5em + 1rem + 2px); }
@@ -7612,7 +7613,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-pills > li.active > a {
   color: #000;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 0.25rem; }
 
 .breadcrumb a,
 .breadcrumb .active,
@@ -7647,7 +7649,7 @@ th,
   margin-bottom: 1rem; }
 
 .form-control:focus {
-  caret-color: #ffffff; }
+  caret-color: #000; }
 
 .form-control.is-invalid,
 .form-control.is-valid,
@@ -7711,7 +7713,6 @@ option:hover {
 .nav-tabs .nav-link.active {
   font-style: normal;
   font-weight: 500;
-  font-size: calc(1rem + 0.5rem);
   color: #ffffff;
   border-color: transparent;
   border-bottom: 1.5px solid white; }
@@ -7861,5 +7862,10 @@ option:hover {
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff; }
+
+.page-link:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000 !important; }
 
 /*# sourceMappingURL=inversion.css.map */
